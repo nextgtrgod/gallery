@@ -1,0 +1,65 @@
+
+/* @font-face {
+	font-family: 'proxima';
+	src: url('./assets/fonts/proxima/light.woff2') format('woff2'),
+		 url('./assets/fonts/proxima/light.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+} */
+
+@font-face {
+	font-family: 'proxima';
+	src: url('./assets/fonts/proxima/regular.woff2') format('woff2'),
+		 url('./assets/fonts/proxima/regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'proxima';
+	src: url('./assets/fonts/proxima/semibold.woff2') format('woff2'),
+		 url('./assets/fonts/proxima/semibold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'proxima';
+	src: url('./assets/fonts/proxima/bold.woff2') format('woff2'),
+		 url('./assets/fonts/proxima/bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'proxima';
+	src: url('./assets/fonts/proxima/extrabold.woff2') format('woff2'),
+		 url('./assets/fonts/proxima/extrabold.woff') format('woff');
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'proxima';
+	src: url('./assets/fonts/proxima/black.woff2') format('woff2'),
+		 url('./assets/fonts/proxima/black.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'mx';
+	src: url('./assets/fonts/mx/regular.woff2') format('woff2'),
+		 url('./assets/fonts/mx/regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'mx';
+	src: url('./assets/fonts/mx/bold.woff2') format('woff2'),
+		 url('./assets/fonts/mx/bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
