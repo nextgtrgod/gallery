@@ -1,5 +1,5 @@
 
-/* html {
+html {
     overflow: hidden;
 	height: 100%;
 	touch-action: manipulation;
@@ -8,7 +8,7 @@
 body {
     height: 100%;
     overflow: auto;
-} */
+}
 
 body {
 	margin: 0;
