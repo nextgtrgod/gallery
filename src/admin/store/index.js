@@ -10,6 +10,14 @@ export default new Vuex.Store({
 		...data,
 	},
 	mutations: {
-
+		update: (state, data) => {
+			state.images = [
+				...state.images.map(image => (
+					image.id !== data.id
+						? image
+						: Object.assign({}, image, data)
+				))
+			]
+		},
 	},
 })

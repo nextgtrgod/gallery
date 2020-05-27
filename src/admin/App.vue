@@ -2,8 +2,8 @@
 <main id="app">
 	<div class="grid" :class="{ visible: showGrid }"/>
 
-	<resizable v-for="image in images" :key="image.id" v-bind="image">
-		<ui-image v-bind="image"/>
+	<resizable v-for="image in images" :key="image.id" :id="image.id">
+		<preview v-bind="image"/>
 	</resizable>
 
 	<ul class="controls">
@@ -17,14 +17,16 @@
 <script>
 import { mapState } from 'vuex'
 import Resizable from '@/admin/components/Resizable'
-import uiImage from '@/admin/components/Image'
+import Preview from '@/admin/components/Preview'
 import uiSwitch from '@/admin/components/Switch'
+
+// import html2canvas from 'html2canvas'
 
 export default {
 	name: 'App',
 	components: {
 		Resizable,
-		uiImage,
+		Preview,
 		uiSwitch,
 	},
 	data: () => ({
@@ -35,6 +37,11 @@ export default {
 
 		root.style.setProperty('--cell', this.grid.cell + 'px')
 		root.style.setProperty('--gap', this.grid.gap + 'px')
+	},
+	mounted() {
+		// html2canvas(document.body).then(function(canvas) {
+		// 	document.body.appendChild(canvas)
+		// })
 	},
 	computed: {
 		...mapState({
@@ -141,6 +148,14 @@ body {
 		align-items: center;
 		justify-items: flex-end;
 	}
+}
+
+canvas {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
 
 </style>

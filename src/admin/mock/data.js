@@ -6,7 +6,7 @@ let data = {
 	},
 	images: [
 		{
-			id: 1,
+			id: '1',
 			name: 'Funnels above the sky',
 			src: {
 				jpeg: 'https://bit.ly/36tmgdj',

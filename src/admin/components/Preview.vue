@@ -1,5 +1,5 @@
 <template>
-<div class="ui-image" :style="style">
+<div class="preview" :style="style">
 	<img :src="src.jpeg" class="original" :class="orientation">
 	<img
 		class="view"
@@ -13,7 +13,7 @@
 
 <script>
 export default {
-	name: 'uiImage',
+	name: 'Preview',
 	props: {
 		src: {
 			type: Object,
@@ -78,10 +78,10 @@ export default {
 
 <style lang="scss" scoped>
 
-.ui-image {
+.preview {
 	width: 100%;
 	height: 100%;
-	box-shadow: 0 0 12px #000;
+	box-shadow: 0 0 16px #000;
 }
 
 img.view {
